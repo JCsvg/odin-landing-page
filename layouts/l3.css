@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2980b9;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    z-index: 100;
+}
+
+main {
+    margin-top: 80px;
+    padding: 1rem;
+    height: 100vh;
+    overflow-y: auto;
+}

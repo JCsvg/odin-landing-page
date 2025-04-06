@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #858597; /* Cinza-azulado com toque creme */
+    color: #2f3d55;
+}
+
+header {
+    background: #4b5667; /* Cinza azulado mais fechado */
+    color: #0f1126;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* isso coloca os itens no topo e a imagem no fim */
+    height: 100%; /* ocupa a altura total de main */
+    width: 200px;
+    background: #858597;
+    padding: 1rem;
+    color: #2f3d55;
+}
+
+
+
+section {
+    flex: 1;
+    padding: 1rem;
+    background: #cfcfd6;  /* Creme acinzentado */
+    color: #2f3d55;
+}
+
+footer {
+    background: #4b5667;
+    color: #0f1126;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Botões e links */
+a, button {
+    background-color: #687f9c; /* Cinza azulado médio */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    background-color: #7c8899; /* Um pouco mais escuro no hover */
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+#ul-menu {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-grow: 1; /* Isso empurra a imagem pra baixo */
+}
+
+
+#h1-header {
+    margin: 8px;
+}
+
+#img-main {
+    margin-top: 1rem;
+    align-self: center;
+}
+
